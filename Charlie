@@ -1,0 +1,99 @@
+#include <iostream>
+#include <string>
+#include <cstdlib>
+#include <ctime>
+#include <string>
+using namespace std;
+
+int main () {
+  int num_1;
+  string name;
+  cout << " Hello! My name is Charlie and I don't know who I am..."<< endl << " What is your name?"<<endl;
+  cin >> name;
+  cout << " Nice to meet you , " << name << endl;
+  cout << " Choose one of my features:" << endl << " 1) calculator" << endl << " 2) randomiser"<< endl;
+  cout << " P.S. For choose write with numbers, please."<< endl;
+cin >> num_1;
+
+switch (num_1) {
+  case 1:
+  int num_1 ;
+int num_2 ;
+char operation;
+cout << " Nice." << endl;
+cout << "Write any number." << "\n";
+cin >> num_1;
+cout << "Repeat." << "\n";
+cin >> num_2;
+cout << "Now , enter operation what do you want." << "\n";
+cout << " Addition(+),subtraction(-),multiplication(*) or division(/) " << "\n";
+cout << "And write with symboles,please." << endl;;
+cin >> operation;
+ 
+
+switch (operation) {
+  case '+':
+  cout << num_1 << "+" << num_2 << "=" << num_1 + num_2 << endl;
+  break;
+  case '-':
+  cout << num_1 << "-" << num_2 << "=" <<  num_1 - num_2 << "\n";
+  break;
+  case '*':
+  cout << num_1 << "*" << num_2 << "=" << num_1*num_2;
+  break;
+  case '/':
+  if (num_2 ==0  ) {
+    cout << "BOOM ";
+  } else
+  cout << num_1 << "/" << num_2 << "="<< num_1 / num_2;
+   
+  break;
+ 
+ 
+  default:
+          cout << "Error.You're not even capable of perfoming banal actions -_-.";
+          
+} return 0;
+
+
+case 2:
+  int num;
+ 
+  cout << "If you want to generate a number , enter the lenght (1-10)" << "\n";
+  cin >> num;
+  srand(time (NULL));
+
+  switch (num) {
+    case 2 :
+            cout << "Random number is " << 10 + rand() % 99;
+            break;
+    case 3:
+            cout << "Random number is " << 100 + rand() % 999;
+            break;
+     case 4:
+            cout << "Random number is " << 1000 + rand() % 9999;
+            break;
+     case 5:
+            cout << "Random number is " << 10000 + rand() % 99999;
+            break;
+     case 6:
+            cout << "Random number is " << 100000 + rand() % 999999 ;
+            break;
+      case 7:
+            cout:cout << "Random number is " << 1000000 + rand() % 9999999;
+            break;
+       case 8:
+            cout << "Random number is " << 10000000 + rand() % 99999999;
+            break;
+      case 9:
+            cout << "Random number is " << 100000000 + rand() % 999999999; 
+             break;                                 
+          
+       case 10:
+            cout << "Random number is " << 1000000000 + rand() % 9999999999; 
+            break;
+            return 0;
+  }
+} 
+
+}
