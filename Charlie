@@ -80,7 +80,7 @@ case 2:
             cout << "Random number is " << 100000 + rand() % 999999 ;
             break;
       case 7:
-            cout:cout << "Random number is " << 1000000 + rand() % 9999999;
+            cout << "Random number is " << 1000000 + rand() % 9999999;
             break;
        case 8:
             cout << "Random number is " << 10000000 + rand() % 99999999;
